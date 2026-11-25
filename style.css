@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+--ink: #18221f;
+--green: #173d35;
+--green-light: #dfeae4;
+--cream: #f7f4ed;
+--white: #ffffff;
+--accent: #c99b5b;
+}
+
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 75px;
+}
+
+body {
+margin: 0;
+color: var(--ink);
+background: var(--cream);
+font-family: "DM Sans", Arial, sans-serif;
+}
+
+/* MENU */
+
+.navbar {
+background: rgba(23, 61, 53, 0.96);
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+letter-spacing: 2px;
+}
+
+.nav-link {
+margin-left: 18px;
+transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.nav-link:hover {
+color: #e8c88e !important;
+transform: translateY(-2px);
+}
+
+/* CABEÇALHO */
+
+.hero {
+background:
+radial-gradient(
+circle at 85% 20%,
+rgba(201, 155, 91, 0.28),
+transparent 28%
+),
+linear-gradient(
+135deg,
+#173d35 0%,
+#102b26 100%
+);
+
+color: var(--white);
+
+}
+
+.eyebrow {
+color: var(--accent);
+font-weight: 700;
+letter-spacing: 3px;
+font-size: 0.8rem;
+}
+
+.hero h1,
+h2 {
+font-family: "Playfair Display", Georgia, serif;
+}
+
+.hero h1 {
+font-size: clamp(2.7rem, 7vw, 5.8rem);
+line-height: 1.02;
+margin-bottom: 25px;
+}
+
+.hero h1 span {
+color: #e8c88e;
+}
+
+.hero .lead {
+max-width: 650px;
+color: #e3ece8;
+}
+
+/* BOTÃO */
+
+.btn-main {
+margin-top: 15px;
+padding: 13px 25px;
+border-radius: 50px;
+background: #e8c88e;
+color: var(--ink);
+font-weight: 700;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-main:hover {
+color: var(--ink);
+transform: translateY(-3px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* FOTO */
+
+.profile-frame {
+display: inline-block;
+padding: 14px;
+border: 1px solid rgba(232, 200, 142, 0.65);
+border-radius: 50%;
+}
+
+.profile-photo {
+width: min(330px, 70vw);
+height: min(330px, 70vw);
+object-fit: cover;
+border-radius: 50%;
+border: 7px solid var(--white);
+}
+
+/* SEÇÕES */
+
+.section-light {
+background: var(--cream);
+}
+
+.section-dark {
+background: var(--green);
+color: var(--white);
+}
+
+section h2 {
+font-size: clamp(2.2rem, 5vw, 4rem);
+margin-bottom: 25px;
+}
+
+.section-number {
+color: var(--accent);
+font-weight: 700;
+letter-spacing: 3px;
+font-size: 0.8rem;
+}
+
+.section-light p {
+color: #46534f;
+}
+
+/* HABILIDADES */
+
+.skill-card {
+padding: 25px 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.skill-card:last-child {
+border-bottom: 0;
+}
+
+.skill-card span,
+.timeline-item span {
+color: var(--accent);
+font-size: 0.8rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+.skill-card h3,
+.timeline-item h3 {
+font-weight: 700;
+margin: 8px 0;
+}
+
+.skill-card p {
+color: #dbe6e1;
+margin-bottom: 0;
+}
+
+/* FORMAÇÃO */
+
+.timeline-item {
+padding: 0 0 30px 25px;
+margin-bottom: 25px;
+border-left: 2px solid var(--accent);
+}
+
+.timeline-item:last-child {
+margin-bottom: 0;
+}
+
+.timeline-item p {
+margin-bottom: 0;
+}
+
+/* CONTATO */
+
+.contact-section {
+background: var(--green-light);
+}
+
+.instagram-button {
+display: inline-block;
+padding: 14px 24px;
+border: 2px solid var(--green);
+border-radius: 50px;
+color: var(--green);
+text-decoration: none;
+font-weight: 700;
+transition: all 0.25s ease;
+}
+
+.instagram-button:hover {
+background: var(--green);
+color: var(--white);
+transform: translateY(-3px);
+}
+
+/* RODAPÉ */
+
+footer {
+background: #102b26;
+color: var(--white);
+}
+
+
+/* FORMULARIO WEB3FORMS */
+.contact-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(16, 43, 38, 0.08);
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--green);
+    font-weight: 700;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd8d1;
+    border-radius: 10px;
+    font: inherit;
+    background: #fff;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #c99b5b;
+    border-color: #c99b5b;
+}
+.contact-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+.contact-form button {
+    border: 0;
+    cursor: pointer;
+}
+.form-note {
+    color: #46534f;
+    font-size: 0.9rem;
+}
+
+/* TABLET E CELULAR */
+
+@media (max-width: 991.98px) {
+
+.nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+}
+
+}
+
+/* CELULAR */
+
+@media (max-width: 575.98px) {
+
+.hero h1 {
+    font-size: 2.8rem;
+}
+
+.profile-photo {
+    width: 230px;
+    height: 230px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+}
+
+.contact-section .text-lg-end {
+    text-align: left !important;
+}
+
+}
